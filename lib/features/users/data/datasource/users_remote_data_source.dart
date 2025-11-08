@@ -4,7 +4,7 @@ import 'package:flutter_tutorial/features/users/domain/model/user_model.dart';
 class UserRemoteDataSource {
   final Dio dio;
 
-  UserRemoteDataSource(this.dio);
+  UserRemoteDataSource({required this.dio});
 
   Future<List<UserModel>> getUsers() async {
     var result = await dio.get('users');

@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 
-class ApiClients {
+class ApiClient {
   Dio getDio() {
     Dio dio = Dio();
-    dio.options.baseUrl = 'https//:dummyjson.com';
+    dio.options.baseUrl = 'https://dummyjson.com/';
     return dio;
   }
 }
